@@ -13,6 +13,7 @@ ENABLE_TESTING()
 set(LIB_VERSION_MAJOR "2")
 set(LIB_VERSION_MINOR "2")
 set(LIB_VERSION_PATCH "1")
+set(BUILD_TESTS false)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/third_party/cmake/modules/")
 
@@ -90,7 +91,7 @@ if(BUILD_EXAMPLES)
 endif(BUILD_EXAMPLES)
 
 if(BUILD_TESTS)
-	add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/tests)
+	#add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/tests)
 endif(BUILD_TESTS)
 
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src)
