@@ -63,7 +63,7 @@
 /**
  * Set the maximum number of client connections
  */
-#define CONFIG_CS104_MAX_CLIENT_CONNECTIONS 5
+#define CONFIG_CS104_MAX_CLIENT_CONNECTIONS 32
 
 /* activate TCP keep alive mechanism. 1 -> activate */
 #define CONFIG_ACTIVATE_TCP_KEEPALIVE 0

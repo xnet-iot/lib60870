@@ -1426,7 +1426,7 @@ CS104_Slave_activate(CS104_Slave self, MasterConnection connectionToActivate)
 #endif
         int i;
 
-        for (i = 0; i < CONFIG_CS104_MAX_CLIENT_CONNECTIONS; i++) {
+/**        for (i = 0; i < CONFIG_CS104_MAX_CLIENT_CONNECTIONS; i++) {
             MasterConnection con = self->masterConnections[i];
 
             if (con) {
@@ -1434,7 +1434,7 @@ CS104_Slave_activate(CS104_Slave self, MasterConnection connectionToActivate)
                     MasterConnection_deactivate(con);
             }
 
-        }
+        } **/
 
 #if (CONFIG_USE_SEMAPHORES == 1)
         Semaphore_post(self->openConnectionsLock);
